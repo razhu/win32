@@ -7,16 +7,16 @@ default: &default
 
 development:
   <<: *default
-  database: casasmap4_development
+  database: casasmap7_development
 
 
 test:
   <<: *default
-  database: casasmap4_test
+  database: casasmap7_test
 
 
 production:
   <<: *default
-  database: casasmap4_production
-  username: casasmap4
-  password: <%= ENV['CASASMAP4_DATABASE_PASSWORD'] %>
+  database: casasmap7_production
+  username: casasmap7
+  password: <%= ENV['CASASMAP7_DATABASE_PASSWORD'] %>
